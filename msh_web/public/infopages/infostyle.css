@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #007bff !important;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.info-box {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.info-box:hover {
+    transform: scale(1.05);
+}
+
+.section {
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+.section img {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+}
+
+#navButtons {
+    position: sticky;
+    top: 80px;
+    z-index: 999;
+    background:transparent;
+    padding: 10px;
+    text-align: center;
+}
+
+#navButtons button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    color: #000;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+#navButtons button.active {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.1);
+  
+}
+#navButtons :nth-child(1){
+    background-color: #2a4057;
+    color: white;
+}
+.our-journey {
+    height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0,0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ), url('../assets/images/journey.jpg') no-repeat center center/cover;
+    position: relative;
+    padding: 60px 20px;
+}
+
+.our-journey h1 {
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.our-journey p {
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+#google_translate_element {
+    position: fixed;
+    color: black;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    background-color: white;
+    padding: 10px 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
