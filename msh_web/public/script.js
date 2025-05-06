@@ -16,7 +16,15 @@ document.addEventListener("DOMContentLoaded", () => {
         signupForm.style.display = "none";
         loginForm.style.display = "block";
         homeBtn.style.display = "none";
+    
+        // Hide dropdown instantly
+        const dropdownMenu = document.querySelector(".dropdown-menu");
+        if (dropdownMenu) {
+            dropdownMenu.style.visibility = "hidden";
+        }
     });
+    
+    
 
     // Open signup popup
     signupBtn.addEventListener("click", (e) => {
@@ -74,15 +82,3 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Login form not found!");
     }
 });
-
-
-function googleTranslateElementInit() {
-    new google.translate.TranslateElement(
-        {
-            pageLanguage: 'en',
-            includedLanguages: 'fr,hi,es,ta',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-        },
-        'google_translate_element'
-    );
-}
